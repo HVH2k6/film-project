@@ -1,0 +1,89 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sofia+Sans:wght@500;600&family=Tektur&display=swap");
+@layer base {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+    @apply font-body bg-slate-700;
+  }
+  ul {
+    list-style: none;
+  }
+  button {
+    border: 0;
+    outline: 0;
+  }
+  a {
+    text-decoration: none;
+  }
+  .container {
+    margin: 0 auto;
+  }
+  .banner .swiper-slide {
+    height: 650px;
+  }
+  .banner .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.3);
+  }
+  .paginate_page .pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+    li {
+     
+      fill: #fff;
+      color: #fff;
+      font-weight: 600;
+      background-color: #f62682;
+    }
+    a{
+      height: 45px;
+      min-width: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .selected{
+      background-color: #20E3B2;
+    }
+  }
+  .eposode_movie .active{
+    background-color: #20E3B2;
+  }
+  @media screen and (min-width:768px) and (max-width:1024px) {
+    .banner .swiper-slide {
+      height: 400px;
+    }
+  }
+  @media screen  and (max-width:650px) {
+    .banner .swiper-slide {
+      height: 250px;
+    }
+    .banner .swiper-button-next, .banner .swiper-button-prev{
+      width: 35px;
+      height: 35px;
+      background-color: #ccc;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      
+    }
+    .banner .swiper-button-next::after, .banner .swiper-button-prev::after{
+      font-size: 25px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 600;
+    }
+  }
+}

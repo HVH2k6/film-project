@@ -38,7 +38,7 @@ const WacthFilmPage = () => {
       )}
       {!loading && (
         <div>
-          <div className="flex items-center my-3 gap-x-5">
+          <div className="flex items-center my-3 gap-x-5 flex-wrap">
             <button
               className="fill-[#94a3b8] text-[#94a3b8] flex items-center"
               onClick={() => {
@@ -96,11 +96,11 @@ const WacthFilmPage = () => {
                 className="w-full h-full object-cover"
               ></iframe>
             </div>
-            <div className="flex flex-wrap gap-5 mt-10 ">
+            <div className="grid grid-cols-10 gap-5 mt-7 md:max-lg:grid-cols-7 max-[767px]:grid-cols-3">
               {episodeFilm.length > 0 &&
                 episodeFilm.map((item, index) => (
                   <div
-                    className={`min-w-[50px] h-10 font-semibold text-white flex items-center justify-center text-xl max-[650px]:min-w-[70px] ${
+                    className={`min-w-[50px] w-full h-10 font-semibold text-white flex items-center justify-center text-xl max-[650px]:min-w-[70px] ${
                       selectedEpisodeIndex === index
                         ? "bg-[#20E3B2]"
                         : "bg-primary"

@@ -32,28 +32,12 @@
     height: 15px;
     opacity: var(--swiper-pagination-bullet-inactive-opacity, 0.3);
   }
-  .paginate_page .pagination {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    column-gap: 20px;
-    li {
-     
-      fill: #fff;
-      color: #fff;
-      font-weight: 600;
-      background-color: #f62682;
-    }
-    a{
-      height: 45px;
-      min-width: 50px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-    .selected{
-      background-color: #20E3B2;
-    }
+  .paginate_page  {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding-bottom: 20px;
+   
+    
   }
   .eposode_movie .active{
     background-color: #20E3B2;
@@ -63,9 +47,10 @@
       height: 400px;
     }
   }
-  @media screen  and (max-width:650px) {
+  @media screen  and (max-width:767px) {
     .banner .swiper-slide {
-      height: 250px;
+     
+      height: 300px;
     }
     .banner .swiper-button-next, .banner .swiper-button-prev{
       width: 35px;
@@ -85,5 +70,7 @@
       align-items: center;
       font-weight: 600;
     }
+  
   }
 }
+

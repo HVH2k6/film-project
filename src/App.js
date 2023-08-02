@@ -1,6 +1,7 @@
 import Banner from "components/banner/Banner";
 import Main from "components/layout/Main";
 import ContactPage from "pages/ContactPage";
+
 import DetailMoviePage from "pages/DetailMoviePage";
 import HomePage from "pages/HomePage";
 import MoviePage from "pages/MoviePage";
@@ -37,6 +38,7 @@ const App = () => {
             path="/lien-he"
             element={<ContactPage></ContactPage>}
           ></Route>
+          
           <Route
             path="/xem-phim/:slug"
             element={<WacthFilmPage></WacthFilmPage>}

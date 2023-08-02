@@ -26,7 +26,7 @@ const ContactPage = () => {
     
   };
   return (
-    <div className="container flex justify-center max-[650px]:px-4">
+    <div className="container flex justify-center max-[767px]:px-4">
       <form ref={form} onSubmit={sendEmail}>
         <div className="mb-3">
           <label htmlFor="name" className="font-semibold text-white mr-2">
@@ -34,7 +34,7 @@ const ContactPage = () => {
           </label>
           <input
             type="text"
-            className="w-[500px] h-10 border-[3px] border-black outline-0 bg-transparent p-2 text-white text-lg rounded-lg max-[650px]:w-[300px]"
+            className="w-[500px] h-10 border-[3px] border-black outline-0 bg-transparent p-2 text-white text-lg rounded-lg max-[767px]:w-[90%]"
             placeholder="Nhập tên của bạn"
             name="user_name"
             id="name"
@@ -46,7 +46,7 @@ const ContactPage = () => {
           </label>
           <input
             type="email"
-            className="w-[500px] h-10 border-[3px] border-black outline-0 bg-transparent p-2 text-white text-lg rounded-lg max-[650px]:w-[300px]"
+            className="w-[500px] h-10 border-[3px] border-black outline-0 bg-transparent p-2 text-white text-lg rounded-lg max-[767px]:w-[90%]"
             placeholder="Nhập email của bạn"
             name="user_email"
             id="email"
@@ -58,7 +58,7 @@ const ContactPage = () => {
           </label>
           <textarea
             name="message"
-            className="w-[500px] h-[200px] border-[3px] border-black outline-0 bg-transparent p-2 text-white text-lg rounded-lg max-[650px]:w-[300px]"
+            className="w-[500px] h-[200px] border-[3px] border-black outline-0 bg-transparent p-2 text-white text-lg rounded-lg max-[767px]:w-[90%]"
             placeholder="Nhập ý kiến của bạn"
             id="idea"
           ></textarea>

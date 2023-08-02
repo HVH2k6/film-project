@@ -25,7 +25,7 @@ const DetailMoviePage = () => {
       )}
       {!loading && (
         <div className="">
-          <div className="flex items-center my-3 gap-x-5">
+          <div className="flex items-center my-3 gap-x-5 flex-wrap">
             <button
               className="fill-[#94a3b8] text-[#94a3b8] flex items-center"
               onClick={() => {
@@ -71,8 +71,8 @@ const DetailMoviePage = () => {
               {itemMovie.name}
             </span>
           </div>
-          <div className="flex h-[450px] bg-gray_2 p-3 max-[650px]:flex-col max-[650px]:h-auto">
-            <div className="w-[300px] h-full rounded-xl max-[650px]:mx-auto">
+          <div className="flex h-[450px] bg-gray_2 p-3 max-[767px]:flex-col max-[767px]:h-auto">
+            <div className="w-[300px] h-full rounded-xl max-[767px]:mx-auto max-[767px]:w-[80%]">
               <img
                 src={itemMovie.thumb_url}
                 alt=""
@@ -97,7 +97,7 @@ const DetailMoviePage = () => {
                 </button>
               </div>
             </div>
-            <div className="ml-3 flex-1 max-[650px]:mt-5">
+            <div className="ml-3 flex-1 max-[767px]:mt-5">
               <div className="flex flex-col items-center">
                 <h1 className="text-secondary font-bold text-2xl mb-2 ">
                   {itemMovie.name}

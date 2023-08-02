@@ -14,7 +14,7 @@ const Banner = () => {
   );
   const movies = data?.items || [];
   return (
-    <div className="container h-[650px] relative banner md:max-lg:max-w-[720px] md:max-lg:h-[400px] max-[650px]:max-w-[380px] max-[650px]:h-[250px]">
+    <div className="container h-[650px] relative banner md:max-lg:max-w-[90%] md:max-lg:h-[400px] max-[767px]:max-w-[90%] max-[767px]:h-[300px]">
       <Swiper
         modules={[Navigation, Pagination, A11y]}
         spaceBetween={50}
